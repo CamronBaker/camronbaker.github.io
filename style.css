@@ -2,11 +2,12 @@ body {
     background: rgb(150, 83, 0);
     color: rgb(45, 45, 45);
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
+
 }
 #all-contents {
   max-width: 800px;
     margin: auto;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* navigation menu */
