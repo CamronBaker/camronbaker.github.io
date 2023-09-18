@@ -2,7 +2,7 @@ body {
     background: rgb(150, 83, 0);
     color: rgb(45, 45, 45);
     padding: 10px;
-    font-family: arial;
+    font-family: 'Times New Roman', Times, serif;
 }
 #all-contents {
   max-width: 800px;
@@ -24,6 +24,7 @@ h1 {
     color: white;
     flex: 1;
     margin: 0;
+    border: 30px;
 }
 #nav-ul {
     list-style-image: none;
