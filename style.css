@@ -3,6 +3,7 @@ body {
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
+    border-radius: 30px;
 }
 #all-contents {
   max-width: 800px;
@@ -24,6 +25,7 @@ h1 {
     color: white;
     flex: 1;
     margin: 0;
+    border-radius: 30px;
 }
 #nav-ul {
     list-style-image: none;
