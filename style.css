@@ -42,6 +42,7 @@ a {
 main {
     background: rgb(31, 102, 0);
     display: flex;
+    border: 30px;
 }
 .sidebar {
     margin-right: 25px;
