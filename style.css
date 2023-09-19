@@ -17,7 +17,7 @@ nav {
    margin-bottom: 20px;
     display: flex;
     padding: 10px;
-    border: 30px;
+    border-radius: 30px;
 }
 h1 {
     display: flex;
@@ -26,6 +26,7 @@ h1 {
     flex: 1;
     margin: 0;
     border: 30px;
+    color: rgb(150, 83, 0);
 }
 #nav-ul {
     list-style-image: none;
@@ -44,6 +45,8 @@ main {
     background: rgb(31, 102, 0);
     display: flex;
     border: 30px;
+    color: rgb(150, 83, 0);
+    border-style: groove;
 }
 .sidebar {
     margin-right: 25px;
@@ -59,8 +62,10 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 16px silver ridge;
+    border: 5px silver ridge;
     padding: 8px;
+    color:rgb(150, 83, 0);
+    border-style: dashed;
 }
 h2, h3 {
     margin: 0px;
