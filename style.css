@@ -55,9 +55,6 @@ main {
 }
 .sidebar-img {
     width: 200px;
-    animation-duration: 5s;
-    animation-iteration-count: infinite; 
-    animation-name: Isaac;
 }
 .content {
     flex: 1;
