@@ -1,5 +1,5 @@
 body {
-    background: rgb(150, 83, 0);
+    background: rgb(106, 203, 26);
     color: rgb(45, 45, 45);
     padding: 10px;
 
@@ -12,7 +12,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(31, 102, 00);
+    background: rgb(248, 106, 101);
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
@@ -26,7 +26,7 @@ h1 {
     flex: 1;
     margin: 0;
     border: 30px;
-    color: rgb(150, 83, 0);
+    color: rgb(255, 255, 255);
 }
 #nav-ul {
     list-style-image: none;
@@ -43,10 +43,10 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(31, 102, 0);
+    background: rgb(248, 106, 101);
     display: flex;
     border: 30px;
-    color: rgb(150, 83, 0);
+    color: rgb(255, 255, 255);
     border-style: groove;
 }
 .sidebar {
@@ -65,7 +65,7 @@ main {
 #interests {
     border: 5px silver ridge;
     padding: 8px;
-    color:rgb(150, 83, 0);
+    color:rgb(255, 255, 255);
     border-style: dashed;
 }
 h2, h3 {
