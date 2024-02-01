@@ -1,8 +1,9 @@
 body {
-    background: rgb(106, 203, 26);
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/896/224/864/the-binding-of-isaac-rebirth-wallpaper-preview.jpg");
     color: rgb(45, 45, 45);
     padding: 10px;
-
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #all-contents {
   max-width: 800px;
@@ -12,7 +13,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(248, 106, 101);
+    background: rgb(107, 64, 24);
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
@@ -43,7 +44,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(248, 106, 101);
+    background: rgb(107, 64, 24);
     display: flex;
     border: 30px;
     color: rgb(255, 255, 255);
