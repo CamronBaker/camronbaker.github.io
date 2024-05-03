@@ -52,12 +52,16 @@ enemy.onPlayerCollision = function () {
 };
 enemy.onProjectileCollision = function() {
   game.increaseScore(100);
-enemy.flyTo(1400,0);
+enemy.fadeOut();
 }
  }
  createEnemy(400, groundY - 50)
  createEnemy(600, groundY - 50)
  createEnemy(800, groundY - 50)
+
+ function createReward (x, y){
+  
+ }
     function startLevel() {
       // TODO 13 goes below here
 
