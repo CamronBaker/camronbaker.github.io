@@ -1,4 +1,4 @@
-# Image Filtering
+# Image Filtering 
 
 Use higher order functions to apply filters to images.
 
