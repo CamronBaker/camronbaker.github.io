@@ -21,14 +21,25 @@ function runProgram(){
     RIGHT: 39,
     DOWN: 40,
     UP: 38,
+    W: 87,
+    A: 65,
+    S: 83,
+    D: 68,
+  }
+  var walker2 = {
+    positionX: 350,
+    positionY: 350,
+    speedX: 0,
+    speedY: 0,
   };
   // Game Item Objects
-
+ var width = $("#board").width();
+ var height = $("#board").height();
 
   // one-time setup
   var interval = setInterval(newFrame, FRAMES_PER_SECOND_INTERVAL);   // execute newFrame every 0.0166 seconds (60 Frames per second)
   $(document).on('keydown', handleKeyDown);                           // change 'eventType' to the type of event you want to handle
-
+  $(document).on('keyup', handleKeyUp);
   ////////////////////////////////////////////////////////////////////////////////
   ///////////////////////// CORE LOGIC ///////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
@@ -39,8 +50,8 @@ function runProgram(){
   */
   function newFrame() {
     repositionGameItem();
+    wallcollision();
     redrawGameItem();
-
   }
   
   /* 
@@ -65,7 +76,22 @@ function runProgram(){
     }
   }
   function handleKeyUp(event){
-    
+    if (event.which === KEY.LEFT){
+      console.log("left raised");
+      walker.speedX = 0;
+  }
+  else if (event.which === KEY.RIGHT){
+    console.log("right raised");
+    walker.speedX = 0;
+  }
+  else if (event.which === KEY.UP){
+    console.log("up raised");
+    walker.speedY = 0;
+  }
+  else if (event.which === KEY.DOWN){
+    console.log("down raised");
+    walker.speedY = 0;
+  }
   }
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////
@@ -83,8 +109,23 @@ function runProgram(){
     walker.positionX += walker.speedX;
     walker.positionY += walker.speedY;
   }
+  function wallcollision(){
+    if (walker.positionX < 0){
+      walker.positionX = 0
+    }
+    if (walker.positionY < 0){
+      walker.positionY = 0
+    }
+    if (walker.positionY > height - 50){
+      walker.positionY = height - 50
+    }
+    if(walker.positionX > width - 50){
+      walker.positionX = width - 50 
+    }
+  }
   function redrawGameItem(){
    $("#walker").css("left", walker.positionX);
    $("#walker").css("top", walker.positionY); 
   }
+
 }
